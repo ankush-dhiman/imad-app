@@ -5,6 +5,10 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+app.get('/counter', function (req, res) {
+  res.send(counter.toString());
+});
+
 function createTemplate(data){
 
      var title = data.title;
