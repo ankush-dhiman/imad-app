@@ -6,10 +6,10 @@ var img = document.getElementById('madi');
 var marginLeft = 0;
 
 function moveRight() {
-    if(margingLeft >= '0'){
+   
          marginLeft = marginLeft + 10;
          img.style.marginLeft = marginLeft + 'px' ;
-    }
+    
 
 }
 
