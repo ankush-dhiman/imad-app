@@ -15,7 +15,7 @@ function createTemplate(data){
   <html>
   <head>
    	<title>
-        	$title
+        	${title}
    	</title>
         
         <meta naname="viewport" content="width=device-width, initial-scale=1.0" />
