@@ -52,7 +52,7 @@ var articles = {
     'article-one':{
    title : 'Article One | Ankush Dhiman',
    date : 'Aug 27 2017',
-   heading : 'Article Three '
+   heading : 'Article One ',
    content : `
          <p>
           This is my 1st article.This is my 1st article.This is my 1st article.This is my 1st article.This is my 1st article.This is my 1st article.This is my 1st article.
@@ -65,7 +65,7 @@ var articles = {
    
    title : 'Article two | Ankush Dhiman',
    date : 'Aug 27 2017',
-   heading : 'Article Three '
+   heading : 'Article two ',
    content : `
          <p>
           This is my 2nd article.This is my 2nd article.This is my 2nd article.This is my 2nd article.This is my 2nd article.This is my 2nd article.This is my 2nd article.
@@ -79,14 +79,14 @@ var articles = {
    
   title : 'Article Three | Ankush Dhiman',
   date : 'Aug 27 2017',
-  heading : 'Article Three '
+  heading : 'Article Three ',
   content : `
          <p>
           This is my 3rd article.This is my 3rd article.This is my 3rd article.This is my 3rd article.This is my 3rd article.This is my 3rd article.This is my 3rd article.
 
          </p>
 `
-}
+};
 
 
 };
