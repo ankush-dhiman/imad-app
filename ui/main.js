@@ -7,17 +7,19 @@ var marginLeft = 0;
 var marginRight = 0;
 function moveRight() {
    
-   if((marginLeft >= 0) && (marginLeft <= 1000) )
+   if((marginRight === 0) && (marginLeft<=1000) )
      {
          marginLeft = marginLeft + 10;
          img.style.marginLeft = marginLeft + 'px' ;
      }
-     else
+     marginRight =  (2*marginLeft);
+     
+     while(marginRight>=marginLeft)
      {
          marginRight = marginRight - 10;
          img.style.marginRight = marginRight + 'px' ;
      }
-
+    
 }
 
 img.onclick = function(){
