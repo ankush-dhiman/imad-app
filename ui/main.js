@@ -4,7 +4,7 @@ element.innerHTML = 'New Value';
 
 var img = document.getElementById('madi');
 var marginLeft = 0;
-function moveRight(){
+function moveRight() {
     marginLeft - marginLeft + 3;
     img.style.marginLeft = marginLeft + 'px' ;
 }
