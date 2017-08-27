@@ -15,7 +15,8 @@ button.onclick = function () {
             if(sequest.status===200)
             {
                 var counter = request.responseText;
-                span.innerHTML = document.getElementById('count');
+                var span = document.getElementById('count');
+                span.innerHTML = counter.toString();
             }
         }        
         
