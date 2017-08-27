@@ -1,16 +1,26 @@
-console.log('Loaded!');
-var element = document.getElementById('main-text');
-element.innerHTML = 'New Value';
+//Counter code
 
-var img = document.getElementById('madi');
-var marginLeft = 0;
-var marginRight = 0;
-function moveRight() {
-   
-    marginLeft = marginLeft + 4;
-    img.style.marginLeft = marginLeft + 'px' ;
-}   
+var button = document.getElementById('counter');
 
-img.onclick = function(){
-    var interval = setInterval(moveRight , 50);
-};
+button.onclick = function () {
+    
+    //Create a request object
+    var request = new XMLHttpRequest();
+    
+    //Capture response and store it in a variable
+    request.onreadystatechange = function () {
+        //Take some actions
+        if(request.readyState === XMLHttpRequest.DONE)
+        {
+            if(sequest.status===200)
+            {
+                var counter = request.responseText;
+                span.innerHTML = document.getElementById('count');
+            }
+        }        
+        
+    };
+    
+    request.open('GET' ,'http://dhimanankush72.imad.hasura-app.io/counter' , true );
+    request.send(null);
+} ;
