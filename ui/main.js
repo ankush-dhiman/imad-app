@@ -4,7 +4,7 @@ element.innerHTML = 'New Value';
 
 var img = document.getElementById('madi');
 
-fucntion marginRight(){
+function marginRight(){
     marginLeft = marginLeft + 10;
     img.style.marginLeft = marginLeft + 'px' ;
 }
