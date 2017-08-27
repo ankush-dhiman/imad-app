@@ -4,8 +4,9 @@ element.innerHTML = 'New Value';
 
 var img = document.getElementById('madi');
 var marginLeft = 0;
-
+var marginRight = 0;
 function moveRight() {
+   
    if((marginLeft >= 0) && (marginLeft <= 1000) )
      {
          marginLeft = marginLeft + 10;
@@ -13,8 +14,8 @@ function moveRight() {
      }
      else
      {
-         marginLeft = marginLeft - 10;
-         img.style.marginLeft = marginLeft + 'px' ;
+         marginRight = marginRight - 10;
+         img.style.marginRight = marginRight + 'px' ;
      }
 
 }
