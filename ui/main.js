@@ -6,8 +6,16 @@ var img = document.getElementById('madi');
 var marginLeft = 0;
 
 function moveRight() {
-    marginLeft = marginLeft - 10;
-    img.style.marginLeft = marginLeft + 'px' ;
+    if(margingLeft == 0){
+         marginLeft = marginLeft + 10;
+         img.style.marginLeft = marginLeft + 'px' ;
+    }
+    else if(margingLeft > 200)
+    {
+         marginLeft = marginLeft - 10;
+         img.style.marginLeft = marginLeft + 'px' ;
+        
+    }
 }
 
 img.onclick = function(){
