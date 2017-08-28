@@ -25,3 +25,14 @@ button.onclick = function () {
     request.open('GET' ,'http://dhimanankush72.imad.hasura-app.io/counter' , true );
     request.send(null);
 } ;
+
+var nameInput = document.getElementById('name');
+var name = nameInput.value;
+var submit = document.getElementById('submit_btn');
+submit.onclick = function () {
+    
+    //Make a request to the server and send a name
+    //capture a list of names and render it as list
+    
+    
+};
