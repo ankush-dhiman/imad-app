@@ -20,7 +20,6 @@ app.get('/submit-name', function (req, res) {
   names.push(name);
  
   //JSON java script Obeject Notation
-  
   res.send(JSON.stringify(names));
 });
 
