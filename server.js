@@ -12,6 +12,17 @@ app.get('/counter', function (req, res) {
   res.send(counter.toString());
 });
 
+var names = [];
+
+app.get('/submit-name:name', function (req, res) {
+  var name = req.params.name;
+  
+  names.push(name);
+  //JSON java script Obeject Notation
+  
+  res.send(JSON.stringify(names));
+});
+
 function createTemplate(data){
 
      var title = data.title;
