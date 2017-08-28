@@ -12,16 +12,6 @@ app.get('/counter', function (req, res) {
   res.send(counter.toString());
 });
 
-var names = [];
-
-app.get('/submit-name', function (req, res) {
-  var name = req.query.name;
-  
-  names.push(name);
- 
-  //JSON java script Obeject Notation
-  res.send(JSON.stringify(names));
-});
 
 function createTemplate(data){
 
@@ -64,6 +54,17 @@ function createTemplate(data){
 return htmlTemplate;
      
 }
+
+var names = [];
+
+app.get('/submit-name', function (req, res) {
+  var name = req.query.name;
+  
+  names.push(name);
+ 
+  //JSON java script Obeject Notation
+  res.send(JSON.stringify(names));
+});
 
 var articles = {
    
