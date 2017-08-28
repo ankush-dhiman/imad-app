@@ -18,6 +18,7 @@ app.get('/submit-name:name', function (req, res) {
   var name = req.params.name;
   
   names.push(name);
+ 
   //JSON java script Obeject Notation
   
   res.send(JSON.stringify(names));
