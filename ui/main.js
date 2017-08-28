@@ -45,11 +45,11 @@ submit.onclick = function () {
                  //capture a list of names and render it as list
                 var names = request.responseText;
                 names = JSON.parse(names); //convert from string to back in objects
-                var list = ' ';
+                var list = '';
                 
                 for(var i=0 ; i<names.length;i++){
                     
-                    list <- '<li>' + names[i] + '</li>' ;
+                    list += '<li>' + names[i] + '</li>' ;
                 }
                 var ul = document.getElementById('nameList')
                 ul.innerHTML = list;
@@ -59,7 +59,7 @@ submit.onclick = function () {
     };
     var nameInput = document.getElementById('name');
     var name = nameInput.value;
-    request.open('GET' ,'http://dhimanankush72.imad.hasura-app.io/submit-name?name='+name , true );
+    request.open('GET' ,'http://dhimanankush72.imad.hasura-app.io/submit-name?name=' + name , true );
     request.send(null);
     
 };
