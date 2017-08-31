@@ -1,70 +1,21 @@
 var express = require('express'); //used to create web server 
 var morgan = require('morgan'); //put logs on server
 var path = require('path');
+var Pool = require('pg').Pool;
 
 var app = express();
 app.use(morgan('combined'));
 
-var counter = 0;
-
-app.get('/counter', function (req, res) {
-  counter = counter + 1;
-  res.send(counter.toString());
-});
-
-
-function createTemplate(data){
-
-     var title = data.title;
-     var heading = data.heading;
-     var date = data.date;
-     var content = data.content;
-     var htmlTemplate =`
-  <html>
-  <head>
-   	<title>
-        	${title}
-   	</title>
-        
-        <meta naname="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="ui/style.css" rel="stylesheet" />
-
-   </head>
-<body>
-	<div class="container" >
-            <div>
-                <a href="/" > Home</a>
-            </div> 
-             <hr/>
-                <h3> ${heading} </h3>        
-            
-            <div>
-                ${date}
-            </div>
-                
-             <div>
-               ${content}
-            </div>  
-      </div>
-
-</body>
-</html>
-
-`;
-return htmlTemplate;
-     
+var config = {
+    
+  user:'dhimanankush72',
+  database:'dhimanankush72',
+  host:'db.imad.hasura-app.io',
+  port:'5432',
+  password:process.env.DB_PASSWORD
+    
 }
 
-var names = [];
-
-app.get('/submit-name', function (req, res) {
-  var name = req.query.name;
-  
-  names.push(name);
- 
-  //JSON java script Obeject Notation
-  res.send(JSON.stringify(names));
-});
 
 var articles = {
    
@@ -110,9 +61,90 @@ var articles = {
 
 };
 
+function createTemplate(data){
+
+     var title = data.title;
+     var heading = data.heading;
+     var date = data.date;
+     var content = data.content;
+     var htmlTemplate =`
+  <html>
+  <head>
+   	<title>
+        	${title}
+   	</title>
+        
+        <meta naname="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="ui/style.css" rel="stylesheet" />
+
+   </head>
+<body>
+	<div class="container" >
+            <div>
+                <a href="/" > Home</a>
+            </div> 
+             <hr/>
+                <h3> ${heading} </h3>        
+            
+            <div>
+                ${date}
+            </div>
+                
+             <div>
+               ${content}
+            </div>  
+      </div>
+
+</body>
+</html>
+
+`;
+return htmlTemplate;
+     
+}
+
+
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+
+var pool = new Pool(config);
+
+app.get('/test-db', function (req, res) {
+  //make a select request
+  //return a response with the results
+  pool.query('SELECT * FROM test' ,  function (req, err) {
+      
+      if (err) {
+          res.status(500).send(err.toString());
+      } else {
+          
+          res.send(JSON.stringify(result));
+      }
+      
+      
+  });
+});
+
+
+
+var counter = 0;
+
+app.get('/counter', function (req, res) {
+  counter = counter + 1;
+  res.send(counter.toString());
+});
+
+var names = [];
+
+app.get('/submit-name', function (req, res) {
+  var name = req.query.name;
+  
+  names.push(name);
+ 
+  //JSON java script Obeject Notation
+  res.send(JSON.stringify(names));
 });
 
 app.get('/:articleName', function (req, res) {
