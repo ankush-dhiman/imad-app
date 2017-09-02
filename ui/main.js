@@ -16,7 +16,7 @@ submit.onclick = function () {
             if(request.status===200)
             {
                 console.log('user logged in');
-                aler('logged in successfully');
+                alert('logged in successfully');
                 
             }else if (request.status===403)
             {
