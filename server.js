@@ -2,6 +2,7 @@ var express = require('express'); //used to create web server
 var morgan = require('morgan'); //put logs on server
 var path = require('path');
 var Pool = require('pg').Pool;
+var crypto = require('crypto');
 
 var app = express();
 app.use(morgan('combined'));
