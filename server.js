@@ -181,7 +181,7 @@ app.post('/login', function (req, res) {
         
         
     });
-})
+});
 
 
 var pool = new Pool(config);
