@@ -114,8 +114,9 @@ app.get('/', function (req, res) {
 });
 
 function hash(input, salt) {
-    var hash = crypto.pbkdf2Sync(input, salt, 100000, 512, 'sha512');
-    return hash.toString('hex');
+    var hashed = crypto.pbkdf2Sync(input, salt, 100000, 512, 'sha512');
+    
+    return ['pbkdf2',"1000",salt, hashed.toString('hex')].join('$');
     
     
 }
@@ -146,6 +147,34 @@ app.post('/create-user', function (req, res) {
     });
 });
 
+app.post('/login', function (req, res) {
+    
+    var username = req.body.username;
+    var password = req.body.password;
+   
+   
+    pool.query('SELECT * FROM "user" username = $1,',[username], function (err, result) {
+        
+        if (err) {
+          res.status(500).send(err.toString());
+      } else {
+          if(result.rows.length === 0)
+          {
+              res.status(403).send("Username/Password is Invalid");
+              
+          }
+          else
+          {
+              var dbString = result.rows[0].password;
+              
+          
+              res.send('User succesfully created: '+ username);
+          }
+      }
+        
+        
+    });
+});
 
 
 var pool = new Pool(config);
