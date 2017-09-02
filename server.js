@@ -3,8 +3,8 @@ var morgan = require('morgan'); //put logs on server
 var path = require('path');
 var Pool = require('pg').Pool;
 
-var app = express();
-app.use(morgan('combined'));
+//var app = express();
+//app.use(morgan('combined'));
 
 var config = {
     
@@ -16,6 +16,8 @@ var config = {
     
 };
 
+var app = express();
+app.use(morgan('combined'));
 
 var articles = {
    
