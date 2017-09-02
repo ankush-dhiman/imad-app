@@ -200,7 +200,7 @@ app.get('/check-login', function (req, res) {
     {
         req.send('you are logged in: ' + req.session.auth.userId.toString());
     }else{
-        req.send('you are not logged in: ');
+        req.send('you are not logged in');
     }
     
 
