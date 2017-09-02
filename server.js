@@ -153,14 +153,14 @@ app.post('/login', function (req, res) {
     var password = req.body.password;
    
    
-    pool.query('SELECT * FROM "user" WHERE username = $1 ',[username], function (err, result) {
+    pool.query('SELECT * FROM user WHERE username = $1 ',[username], function (err, result) {
         
         if (err) {
           res.status(500).send(err.toString());
       } else {
           if(result.rows.length === 0)
           {
-              res.status(403).send("Username/Password is Invalid");
+              res.status(403).send('Username/Password is Invalid');
               
           }
           else
@@ -170,10 +170,10 @@ app.post('/login', function (req, res) {
               var hashedPssword = hash(password, salt);
               
               if(hashedPassword === dbString) {
-                  res.send('credentials are correct ');
+                  res.send('credentials are correct');
               }
               else {
-                  res.status(403).send("Username/Password is Invalid");
+                  res.status(403).send('Username/Password is Invalid');
               }
               
           }
