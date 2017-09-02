@@ -163,7 +163,7 @@ app.get('/submit-name', function (req, res) {
   res.send(JSON.stringify(names));
 });
 
-app.get('/articles/:articleName', function (req, res) {
+/*app.get('/articles/:articleName', function (req, res) {
    
    var articleName = req.params.articleName;
    
@@ -185,7 +185,7 @@ app.get('/articles/:articleName', function (req, res) {
       
   }); 
   
-});
+});*/
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
