@@ -178,6 +178,10 @@ app.post('/login', function (req, res) {
               var hashedPassword = hash(password, salt);
               
               if(hashedPassword === dbString) {
+                  
+                  //Set the Session
+                  req.session.auth = {userId: result.rows[0].id};
+                  
                   res.send('credentials are correct');
               }
               else {
@@ -189,6 +193,17 @@ app.post('/login', function (req, res) {
         
         
     });
+});
+
+app.get('/check-login', function (req, res) {
+    if(req.session && req.session.auth && req.session.auth.userId)
+    {
+        req.send('you are logged in: ' + req.session.auth.userId.toString());
+    }else{
+        req.send('you are not logged in: ');
+    }
+    
+
 });
 
 
