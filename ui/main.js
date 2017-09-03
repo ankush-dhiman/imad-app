@@ -6,21 +6,19 @@
  
     function moveRight(){
         
+        if(marginLeft<10){
             marginLeft += 1;
             img.style.marginLeft =  marginLeft + "px";
-    
+        }
+       else
+          {
+              clearInterval(interval)
+          }
     }
 
     img.onclick = function() {
         
-          if(marginLeft>10){
-              
-               clearInterval(interval);
-            
-          }else
-          {
-             interval = setInterval(moveRight, 10);
-          }
+          interval = setInterval(moveRight, 10);
           
     }
 
