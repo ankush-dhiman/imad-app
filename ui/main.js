@@ -1,6 +1,4 @@
- var img = document.getElementById("madi");
- 
- var marginLeft = 0;
+ var img = document.getElementById("madi");var marginLeft = 0;
  
  var interval; //declaring variable globally so that i can use it in outside the funtion.
  
