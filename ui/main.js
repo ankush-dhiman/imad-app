@@ -10,7 +10,7 @@
             img.style.marginLeft =  marginLeft + "px";
         // }//else{
             
-               clearInterval(interval);  //stops setInterval fucntion 
+             //  clearInterval(interval);  //stops setInterval fucntion 
         //}       
     }
 
