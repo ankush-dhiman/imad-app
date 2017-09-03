@@ -5,13 +5,13 @@
  var interval; //declaring variable globally so that i can use it in outside the funtion.
  
     function moveRight(){
-        if(marginLeft<1000){
+        //if(marginLeft<1000){
             marginLeft = marginLeft + 1;
             img.style.marginLeft =  marginLeft + "px";
-         }else{
+        // }//else{
             
                clearInterval(interval);  //stops setInterval fucntion 
-        }       
+        //}       
     }
 
     img.onClick = function() {
