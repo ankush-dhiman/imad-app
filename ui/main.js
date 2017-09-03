@@ -1,7 +1,9 @@
- var img = document.getElementById('madi');
+ var img = document.getElementById("madi");
  
  var marginLeft = 0;
+ 
  var interval; //declaring variable globally so that i can use it in outside the funtion.
+ 
     function moveRight(){
         if(marginLeft<1000){
             marginLeft = marginLeft + 1;
