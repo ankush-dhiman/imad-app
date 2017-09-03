@@ -6,7 +6,7 @@
  
     function moveRight(){
         
-            marginLeft = marginLeft + 1;
+            marginLeft += 1;
             img.style.marginLeft =  marginLeft + "px";
     
     }
@@ -14,6 +14,7 @@
     img.onclick = function() {
         
           if(marginLeft>10){
+              
                clearInterval(interval);
             
           }else
