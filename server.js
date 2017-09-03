@@ -18,10 +18,10 @@ app.use(session({
 
 var config = {
     
-  user:'dhimanankush72',
-  database:'dhimanankush72',
-  host:'db.imad.hasura-app.io',
-  port:'5432',
+  user:"dhimanankush72",
+  database:"dhimanankush72",
+  host:"db.imad.hasura-app.io",
+  port:"5432",
   password:process.env.DB_PASSWORD,
     
 };
