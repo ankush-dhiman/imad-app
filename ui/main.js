@@ -6,7 +6,7 @@
  
     function moveRight(){
         
-        if(marginLeft<10){
+        if(marginLeft<100){
             marginLeft += 1;
             img.style.marginLeft =  marginLeft + "px";
         }
