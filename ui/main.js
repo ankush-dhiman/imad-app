@@ -13,7 +13,7 @@
 
     img.onclick = function() {
         
-          if(marginLeft<1000){
+          if(marginLeft<100){
             interval = setInterval(moveRight, 10);
           }else
           {
