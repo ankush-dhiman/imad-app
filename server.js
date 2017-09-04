@@ -158,6 +158,7 @@ app.post('/create-user', function (req, res) {
     });
 });
 
+
 app.post('/login', function (req, res) {
     
     var username = req.body.username;
@@ -185,7 +186,7 @@ app.post('/login', function (req, res) {
                   //Set the Session
                   req.session.auth = {userId: result.rows[0].id};
                   
-                  res.send('credentials are correct');
+                  res.send("credentials are correct");
               }
               else {
                   res.send(403).send('Username/Password is Invalid');
