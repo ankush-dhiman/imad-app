@@ -1,20 +1,23 @@
  var img = document.getElementById("madi");
  var marginLeft = 0;
- var flag = 0;
+ var marginRight = 0;
  
  
  var interval; //declaring variable globally so that i can use it in outside the funtion.
  
     function moveRight(){
         
-        if(marginLeft<600) {
+        if(marginLeft<600 && marginRight<=0) {
             marginLeft += 1;
             img.style.marginLeft =  marginLeft + "px";
+            margintRight--;
+            marginRight = marginRight *2;
         }
        else 
           { 
               marginLeft -= 1;
               img.style.marginLeft =  marginLeft + "px";
+              marginRight += 1;
           }
     }
 
