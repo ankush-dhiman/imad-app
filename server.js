@@ -33,7 +33,7 @@ var articles = {
    
     'article-one':{
    title : 'Article One | Ankush Dhiman',
-   date : 'Aug 27 2017',
+   date : 'Aug 27, 2017',
    heading : 'Article One ',
    content : `
          <p>
