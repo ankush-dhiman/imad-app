@@ -6,14 +6,17 @@
  
     function moveRight(){
         
-        if(marginLeft<600 && (marginRight===0 || marginRight === 1200)){
+        if(marginLeft<600 && marginRight<=0 && marginLeft>(-600)){
             marginLeft += 1;
             img.style.marginLeft =  marginLeft + "px";
+            marginRigh -= 1;
         }
        else
           { 
-            marginRight = (marginLeft * 2) ; 
-            img.style.marginLeft =  marginRight + "px";
+            marginLeft -= 1;
+            img.style.marginLeft =  marginLeft + "px";
+            marginRight += 1;
+            img.style.marginRight =  marginRight + "px";
           }
     }
 
