@@ -13,10 +13,10 @@
             margintRight--;
             marginRight = marginRight *2;
         }
-       else 
+         else
           { 
               marginLeft -= 1;
-              img.style.marginLeft =  marginLeft + "px";
+              img.style.Left =  marginLeft + "px";
               marginRight += 1;
           }
     }
