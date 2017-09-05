@@ -1,5 +1,5 @@
  var img = document.getElementById("madi");
- var marginLeft = 0;
+ var marginLeft = -600;
  var marginRight = 0;
  
  
@@ -7,16 +7,16 @@
  
     function moveRight(){
         
-        if(marginLeft<600 && marginRight <=0) {
+        if( marginLeft < 600 && marginRight <=0) {
             marginLeft += 1;
             img.style.marginLeft =  marginLeft + "px";
-            marginRight = marginRight - 1;
+            marginRight = marginRight - 1 ;
         }
          else
           { 
               marginLeft -= 1;
               img.style.marginLeft =  marginLeft + "px";
-              marginRight = marginRight + 1 ;
+              
           }
     }
 
