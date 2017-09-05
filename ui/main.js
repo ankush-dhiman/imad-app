@@ -11,7 +11,7 @@
             img.style.marginLeft =  marginLeft + "px";
             marginRigh -= 1;
         }
-       else
+       else if(marginRight<1200)
           { 
             marginLeft -= 1;
             img.style.marginLeft =  marginLeft + "px";
