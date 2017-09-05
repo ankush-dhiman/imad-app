@@ -10,14 +10,14 @@
         if(marginLeft<600 && marginRight<=0) {
             marginLeft += 1;
             img.style.marginLeft =  marginLeft + "px";
-            margintRight--;
+            margintRight = marginRight - 1;
             marginRight = marginRight *2;
         }
          else
           { 
               marginLeft -= 1;
               img.style.Left =  marginLeft + "px";
-              marginRight += 1;
+              marginRight = marginRight + 1;
           }
     }
 
