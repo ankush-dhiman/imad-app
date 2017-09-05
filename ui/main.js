@@ -1,5 +1,5 @@
  var img = document.getElementById("madi");
- var marginLeft = -600;
+ var marginLeft =  0;
  var marginRight = 0;
  
  
@@ -16,7 +16,7 @@
           { 
               marginLeft -= 1;
               img.style.marginLeft =  marginLeft + "px";
-              
+              marginRight = marginRight + 1;
           }
     }
 
