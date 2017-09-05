@@ -7,17 +7,14 @@
  
     function moveRight(){
         
-        if(marginLeft<600 && marginRight<=0) {
+        if(marginLeft<600) {
             marginLeft += 1;
             img.style.marginLeft =  marginLeft + "px";
-            margintRight = marginRight - 1;
-            marginRight = marginRight *2;
         }
          else
           { 
               marginLeft -= 1;
               img.style.marginLeft =  marginLeft + "px";
-              marginRight = marginRight + 1;
           }
     }
 
