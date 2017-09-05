@@ -16,7 +16,7 @@
          else
           { 
               marginLeft -= 1;
-              img.style.Left =  marginLeft + "px";
+              img.style.marginLeft =  marginLeft + "px";
               marginRight = marginRight + 1;
           }
     }
