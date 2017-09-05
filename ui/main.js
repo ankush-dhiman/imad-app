@@ -12,7 +12,8 @@
         }
        else
           { 
-            
+            marginLeft = 0;
+            marginRight += 1 ;
             img.style.marginRight =  marginRight + "px";
             
           }
