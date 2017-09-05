@@ -6,16 +6,16 @@
  
     function moveRight(){
         
-        if(marginLeft<600 && marginRight<=0 && marginLeft>(-600)){
+        if(marginLeft<600 && marginRight===0 || marginRight === ){
             marginLeft += 1;
             img.style.marginLeft =  marginLeft + "px";
             marginRigh -= 1;
         }
        else
           { 
-            marginLeft -= 1;
-            img.style.marginLeft =  marginLeft + "px";
-            marginRight = marginLeft;
+            marginLeft = 0;
+            img.style.marginRight =  marginRight + "px";
+            
           }
     }
 
