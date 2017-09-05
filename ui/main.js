@@ -6,10 +6,9 @@
  
     function moveRight(){
         
-        if(marginLeft<600 && marginRight===0 ){
+        if(marginLeft<600 && marginRight===0 && marginRight === 1200){
             marginLeft += 1;
             img.style.marginLeft =  marginLeft + "px";
-            marginRigh -= 1;
         }
        else
           { 
