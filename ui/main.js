@@ -13,9 +13,9 @@
         }
        else
           { 
-            marginRight += 1;
-            img.style.marginRight =  marginRight + "px";
-            marginLeft -= 1; 
+            marginLeft -= 1;
+            img.style.marginLeft =  marginLeft + "px";
+            marginRight = marginLeft;
           }
     }
 
