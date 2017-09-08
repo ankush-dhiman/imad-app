@@ -94,7 +94,7 @@ function createTemplate(data){
 <body>
             <div class="container" >
                            <nav class="navbar navbar-light bg-faded">
-                                 <a class="navbar-brand" href="/">MYPROFILE</a>
+                                  <a class="navbar-brand" href="/">MYPROFILE</a>
                                   <a class="nav-link" href="/">Home</a>
                                   <a href = "/articles/article-one" >Article One</a>
                                   <a href = "/articles/article-two" >Article Two</a>
