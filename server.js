@@ -93,9 +93,14 @@ function createTemplate(data){
    </head>
 <body>
             <div class="container" >
-                           <div>
-                            <a href="/">Home</a>
-                           </div>
+                           <nav class="navbar navbar-light bg-faded">
+                                 <a class="navbar-brand" href="/">MYPROFILE</a>
+                                  <a class="nav-link" href="/">Home</a>
+                                  <a href = "/articles/article-one" >Article One</a>
+                                  <a href = "/articles/article-two" >Article Two</a>
+                                  <a href = "/articles/article-three" >Article Three</a>
+                                  
+                         </nav>
                 
              <hr/>
                 <h3> ${heading} </h3>        
