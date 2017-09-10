@@ -115,10 +115,6 @@ body {
    color:white;
    border-radius:6px;
 }
-a:hover{
-    background-color:Blue;
-}
-
 
 #navbar ul li a{
    padding: 4px 4px 4px 0px;
