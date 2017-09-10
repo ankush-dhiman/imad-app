@@ -109,6 +109,7 @@ body {
     background-color:lightgrey;
     padding: 0px 4px 0px 4px;
     border-radius:6px;
+    width:200px;
 }
 #navbar ul li a{
    padding: 4px 4px 4px 4px;
