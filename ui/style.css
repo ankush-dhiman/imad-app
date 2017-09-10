@@ -32,4 +32,5 @@ body {
 }
 #navbar ul li{
     float:left;
+    padding: 5px 5px 5px 0px;
 }
