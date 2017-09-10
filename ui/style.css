@@ -37,6 +37,7 @@ body {
 }
 #navbar ul li{
     float:left;
+    margin:0 auto;
 }
 #navbar ul li a{
    padding: 5px 5px 5px 0px;
