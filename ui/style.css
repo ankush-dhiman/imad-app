@@ -104,7 +104,7 @@ body {
 }
 #navbar ul li{
     float:left;
-    margin:0px 2px 0px 2px;
+    margin:2px 2px 0px 2px;
     background-color:lightgrey;
     padding: 0px 4px 0px 4px;
     border-radius:6px;
