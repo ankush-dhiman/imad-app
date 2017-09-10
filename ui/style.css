@@ -105,6 +105,7 @@ body {
 #navbar ul li{
     float:left;
     margin:4px 4px 4px 4px;
+    background-color:lightgrey;
 }
 #navbar ul li a{
    padding: 4px 4px 4px 0px;
@@ -115,7 +116,7 @@ a:hover{
     background-color:Blue;
 }
 
-}
+
 #navbar ul li a{
    padding: 4px 4px 4px 0px;
    text-decoration:none;
