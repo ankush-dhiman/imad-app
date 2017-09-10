@@ -109,7 +109,7 @@ body {
     border-radius:6px;
 }
 #navbar ul li a{
-   padding: 6px 6px 6px 0px;
+   padding: 4px 4px 4px 4px;
    text-decoration:none;
    color:white;
 }
