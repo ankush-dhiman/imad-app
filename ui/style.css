@@ -30,3 +30,6 @@ body {
 #navbar ul{
     list-style-type:none;
 }
+#navbar ul li{
+    float:left;
+}
