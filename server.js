@@ -29,7 +29,7 @@ var config = {
 
 
 
-var articles = {
+/*var articles = {
    
     'article-one':{
    title : 'Article One | Ankush Dhiman',
@@ -71,7 +71,7 @@ var articles = {
 }
 
 
-};
+};*/
 
 function createTemplate(data){
 
