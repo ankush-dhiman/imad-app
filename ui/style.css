@@ -47,6 +47,7 @@ body {
     list-style:none;
     color:#ffffff;
     text-align:center;
+    border-radius:6px;
 }
  #navbar ul li{
      display:inline-block;
