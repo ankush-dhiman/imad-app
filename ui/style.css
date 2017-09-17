@@ -65,7 +65,7 @@ body {
      display:inline-block;
      padding:0 25px 0 25px;
  }
- #nav ul li{
+ #nav ul li a{
      color:#ffffff;
      text-decoration:none;
  }
