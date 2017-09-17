@@ -52,7 +52,7 @@ body {
      display:inline-block;
      padding:0 25px 0 25px;
      background-color:grey;
-     border-radius:2px;
+     border-radius:6px;
  }
  #navbar li a{
      color:#ffffff;
