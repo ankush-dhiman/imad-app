@@ -79,10 +79,11 @@ body {
 
 #navbar ul li a{
    padding: 4px 4px 4px 0px;
+   display:block;
    text-decoration:none;
    color:white;
 }
 a:hover{
     background-color:#ffe382;
-     display:block;
+     
 }
