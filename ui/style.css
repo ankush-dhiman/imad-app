@@ -61,7 +61,7 @@ body {
 }
 #navbar ul{
     list-style-type:none;
-     display:block;
+    
 }
 #navbar ul li{
     float:left;
@@ -70,6 +70,7 @@ body {
     border-radius:6px;
     width:200px;
     text-align:center;
+     display:inline;
 }
 #navbar ul li a{
    padding: 4px 4px 4px 4px;
