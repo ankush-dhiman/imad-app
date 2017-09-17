@@ -64,12 +64,12 @@ body {
     
 }
 #navbar ul li{
+    display:inline;
     margin:2px 2px 0px 2px;
     background-color:lightgrey;
     border-radius:6px;
-    width:200px;
     text-align:center;
-     display:inline;
+     
 }
 #navbar ul li a{
    padding: 4px 4px 4px 4px;
