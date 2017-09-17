@@ -69,12 +69,9 @@ body {
     border-right:1px solid #bbb;
 }
 
-#navbar ul li:last-child {
-    border-right: none;
-}
+
 
 #navbar ul li a {
-    
     color: white;
     text-align: center;
     padding: 14px 16px;
