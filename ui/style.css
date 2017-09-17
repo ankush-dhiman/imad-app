@@ -59,7 +59,7 @@ body {
      color:#ffffff;
      text-decoration:none;
  }
- #navbar ul li a:hover{
+ #navbar ul li:hover{
      background-color:#ffd954;
      
  }
