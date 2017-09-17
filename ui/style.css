@@ -64,6 +64,7 @@ body {
 }
 #navbar ul li{
     float:left;
+    display:block;
     margin:2px 2px 0px 2px;
     background-color:lightgrey;
     border-radius:6px;
@@ -79,7 +80,7 @@ body {
 
 #navbar ul li a{
    padding: 4px 4px 4px 0px;
-   display:block;
+   
    text-decoration:none;
    color:white;
 }
