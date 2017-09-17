@@ -95,20 +95,16 @@ function createTemplate(data){
             <div class="container" >
                           
                          
-                 <nav class="navbar navbar-default">
-                      <div class="container-fluid">
-                        <div class="navbar-header">
-                             <a class="navbar-brand" href="#">
-                                  <img alt="Brand" src="...">
-                              </a>
-                              <a class="nav-link" href="/">Home</a>
-                              <a href = "/articles/article-one" >Article One</a>
-                              <a href = "/articles/article-two" >Article Two</a>
-                              <a href = "/articles/article-three" >Article Three</a>
-                          
-                        </div>
-                      </div>
-                    </nav>
+                 <div id="navbar">
+                        <ul>
+                           
+                            <li><a href="/">Home</a></li>
+                            <li><a href="articles/article-one">Articel-One</a></li>
+                            <li><a href="articles/article-two">Article-Two</a></li>
+                            <li><a href="articles/article-three">Article-Three</a></li>
+                            
+                        </ul>
+                    </div>
                 
              <hr/>
                 <h3> ${heading} </h3>        
