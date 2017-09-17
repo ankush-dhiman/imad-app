@@ -99,9 +99,9 @@ function createTemplate(data){
                         <ul>
                            
                             <li><a href="/">Home</a></li>
-                            <li><a href="/article-one">Articel-One</a></li>
-                            <li><a href="/article-two">Article-Two</a></li>
-                            <li><a href="/article-three">Article-Three</a></li>
+                            <li><a href="articles/article-one">Articel-One</a></li>
+                            <li><a href="articles/article-two">Article-Two</a></li>
+                            <li><a href="articles/article-three">Article-Three</a></li>
                             
                         </ul>
                     </div>
