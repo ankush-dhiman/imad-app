@@ -65,5 +65,9 @@ body {
      display:inline-block;
      padding:0 25px 0 25px;
  }
+ #nav ul li{
+     color:#ffffff;
+     text-decoration:none;
+ }
 
 
