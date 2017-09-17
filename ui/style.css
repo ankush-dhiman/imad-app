@@ -82,7 +82,7 @@ body {
 }
 
 #navbar ul li a:hover:not(.active) {
-    background-color: #111;
+    background-color: #ffe382;
 }
 
 .active {
