@@ -80,7 +80,7 @@ body {
 
 #navbar ul li a{
    padding: 4px 4px 4px 0px;
-   
+   font-size:12px;
    text-decoration:none;
    color:white;
 }
