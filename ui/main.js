@@ -4,7 +4,7 @@
  
 
 function loginfun(){
- document.getElementById('cont_container').innerHTML='<p> hello world </p';
+ document.getElementById('cont_container').innerHTML="<p> hello world </p";
 
 }
 
