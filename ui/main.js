@@ -1,34 +1,8 @@
  var img = document.getElementById("madi");
  
- 
- /*
- var marginLeft =  0;
- var marginRight = 0;
- var interval; //declaring variable globally so that i can use it in outside the funtion.
- 
-    function moveRight(){
-        
-        if( marginLeft < 600 && marginRight <=0  ) {
-            marginLeft += 1;
-            img.style.marginLeft =  marginLeft + "px";
-            marginRight = marginRight - 1 ;
-        }
-         else
-          { 
-              
-              marginLeft -= 1;
-              marginRight = marginLeft;
-              img.style.marginLeft =  marginLeft + "px";
-              
-          }
-    }
+ var login = document.getElementById('login');
+ login.onclick = loginfun;
 
-    img.onclick = function() {
-        
-          interval = setInterval(moveRight, 10);
-          
-    }
-*/
 function loginfun(){
 
 document.getElementById("cont_container").innerHTML = `<form action="/action_page.php">
@@ -74,6 +48,34 @@ submit.onclick = function () {
         }        
         
     };
+ /*
+ var marginLeft =  0;
+ var marginRight = 0;
+ var interval; //declaring variable globally so that i can use it in outside the funtion.
+ 
+    function moveRight(){
+        
+        if( marginLeft < 600 && marginRight <=0  ) {
+            marginLeft += 1;
+            img.style.marginLeft =  marginLeft + "px";
+            marginRight = marginRight - 1 ;
+        }
+         else
+          { 
+              
+              marginLeft -= 1;
+              marginRight = marginLeft;
+              img.style.marginLeft =  marginLeft + "px";
+              
+          }
+    }
+
+    img.onclick = function() {
+        
+          interval = setInterval(moveRight, 10);
+          
+    }
+*/    
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
    // console.log(username);
