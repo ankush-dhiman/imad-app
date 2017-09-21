@@ -1,9 +1,9 @@
  var img = document.getElementById("madi");
  
- var login = document.getElementById('login');
+
  
 
-login = function loginfun(){
+function loginfun(){
 
 document.getElementById("cont_container").innerHTML = "hello";
 
