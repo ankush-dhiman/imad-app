@@ -50,7 +50,7 @@ $("#login").click(function(){
 </body>
 </html>`
    
-   return(logform)
+    res.send(logform);
    
 });
 
