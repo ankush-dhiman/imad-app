@@ -1,9 +1,9 @@
  var img = document.getElementById("madi");
  
  var login = document.getElementById('login');
- login.onclick = loginfun;
+ 
 
-function loginfun(){
+login = function loginfun(){
 
 document.getElementById("cont_container").innerHTML = `<form action="/action_page.php">
   First name:<br>
