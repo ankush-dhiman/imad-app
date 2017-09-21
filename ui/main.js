@@ -5,8 +5,8 @@
 
 function loginfun(){
 
-document.getElementById("cont_container").innerHTML = "hello";
-
+//document.getElementById("cont_container").innerHTML = "hello";
+alert("hello");
 }
 
 
