@@ -108,7 +108,7 @@ function createTemplate(data){
                     </div>
     
                  </div> 
-                
+                <div id="cont_container" >
              <hr/>
                 <h3> ${heading} </h3>        
             
@@ -118,7 +118,8 @@ function createTemplate(data){
                 
              <div>
                ${content}
-            </div>  
+            </div> 
+            </div>
       </div>
 
 </body>
