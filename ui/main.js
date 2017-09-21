@@ -30,12 +30,12 @@
     }
 */
 
-$("#login").click(function(){
-   
-   var logform = `<html>
+$(document).ready( function() {
+    $("#login").on("click", function() {
+        $("#content").load(`<html>
 <body>
 
-<form>
+<form action="/action_page.php">
   First name:<br>
   <input type="text" name="firstname" value="Mickey">
   <br>
@@ -48,16 +48,9 @@ $("#login").click(function(){
 <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
 
 </body>
-</html>`
-   
-    res.send(logform);
-   
+</html>`);
+    });
 });
-
-$("#register").click(function(){
-//Show your register form here
-});
-
 
 //Submit username/password
 var submit = document.getElementById('submit_btn');
