@@ -35,7 +35,7 @@ $("#login").click(function(){
    var logform = `<html>
 <body>
 
-<form action="/action_page.php">
+<form>
   First name:<br>
   <input type="text" name="firstname" value="Mickey">
   <br>
