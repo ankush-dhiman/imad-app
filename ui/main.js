@@ -13,7 +13,7 @@ document.getElementById("cont_container").innerHTML = `<form action="/action_pag
   <input type="text" name="lastname" value="Mouse">
   <br><br>
   <input type="submit" value="Submit">
-</form> `
+</form> `;
 
 }
 
